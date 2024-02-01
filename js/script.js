@@ -31,5 +31,15 @@ $(document).ready(function () {
     }
   }
 
+  $(".hamburger-menu").click(function () {
+    $(".nav-menu").toggle();
+  });
+
+  $(window).resize(function () {
+    if ($(window).width() > 850) {
+      $(".nav-menu").show();
+    }
+  });
+
   typeWriter();
 });
