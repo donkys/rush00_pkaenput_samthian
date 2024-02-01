@@ -1,9 +1,9 @@
 function addStylesheets() {
-    // Tailwind CSS (update the version as needed)
-    var tailwindCSS = document.createElement('link');
-    tailwindCSS.href = 'https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css';
-    tailwindCSS.rel = 'stylesheet';
-    document.head.appendChild(tailwindCSS);
+    // // Tailwind CSS (update the version as needed)
+    // var tailwindCSS = document.createElement('link');
+    // tailwindCSS.href = 'https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css';
+    // tailwindCSS.rel = 'stylesheet';
+    // document.head.appendChild(tailwindCSS);
 
     // Bootstrap CSS (using Bootstrap 5, which doesn't depend on jQuery)
     var bootstrapCSS = document.createElement('link');
