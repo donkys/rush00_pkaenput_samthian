@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  var typingWords = ["developer", "Hello", "effect!"];
+  var typingWords = ["Pkaenput.", "Samthian.", "Developer!"];
   var typingIndex = 0;
   var charIndex = 0;
   var typingSpeed = 100;
   var deletingSpeed = 50;
-  var fixedText = "Hello Good Morning! ";
+  var fixedText = "Hello Pisciner! I'm ";
 
   function typeWriter() {
     if (charIndex < typingWords[typingIndex].length) {

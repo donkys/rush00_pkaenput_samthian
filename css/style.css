@@ -10,26 +10,31 @@ body {
   margin: 0px;
 }
 
-#typing-effect {
-  font-family: "Kanit", "Roboto";
-  font-weight: bold;
-  font-size: 30px;
-  color: #333;
-  border-right: 2px solid #333;
-  padding: 5px;
-  margin: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 90px;
-  /* background: linear-gradient(to right, rgba(255, 179, 71, 0.8), rgba(255, 140, 0, 0.8)); */
   z-index: 1000;
+}
+
+.greeting {
+  height: 190px;
+  font-family: "Kanit", "Roboto";
+  font-weight: bold;
+  font-size: 200px; 
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.head-type{
+  transform: translateY(-30%);
+}
+
+#content-under-type {
+  width: 900px;
 }
 
 .logo {
@@ -60,18 +65,12 @@ body {
   margin: 20px;
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 20px;
-
-  color: #ffffff;
-  background-image: linear-gradient(to right, #534666, #CD7672);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #241d1d;
 }
 
 .nav-button:hover {
-  background-image: linear-gradient(to left, #534666, #CD7672);
-
+  color: #796161;
+  text-decoration: underline;
 }
 
 .nav-menu {
@@ -108,13 +107,81 @@ body {
 }
 
 .parallax {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+
+  position: relative;
+
+  background-image: url('https://cdn.discordapp.com/attachments/886190966514520105/1202851747220037662/background1.png?ex=65cef5fc&is=65bc80fc&hm=58f372322275fa51371eda0d9e74af20e63ceb4bb5b1c400b08b32984014dece&');
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /*กำหนดให้รูปภาพแสดงผลเต็มพื้นที่การแสดงผล */
+  background-size: cover;
 }
+
+#typing-effect {
+  font-family: "Kanit", "Roboto";
+  font-weight: bold;
+  width: min-content;
+  font-size: 50px;
+  color: #333;
+  border-right: 2px solid #333;
+  padding: 5px;
+  margin: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#image1 {
+  background-image: url('css/background1.png');
+}
+
 #text {
   position: absolute;
   font-size: 5em;
+}
+
+.port-body{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.section-two{
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+.contact {
+  background-color: #241d1d;
+  height: 100px;
+}
+
+.content {
+  background-color: #333;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.text {
+  /* combo relative with absolute */
+  position: absolute;
+
+  /* มันไม่กลางมันไปเยื้องขวาเลย translate */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.custom-flex {
+  display: flex;
+  flex-direction: column;
 }
