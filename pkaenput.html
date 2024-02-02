@@ -1,35 +1,344 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="./js/importLibrary.js"></script>
 
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/style.css" />
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-        <title>pkeanput</title>
+        <title>samthian</title>
     </head>
 
-    <body>
-        <nav class="position-fixed d-flex navbar">
-            <div class="logo">
-                <p class="logo up">42 Bangkok</p>
-                <p class="logo down">Rush Project</p>
-            </div>
-            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
-            <div class="nav-menu">
-                <a class="nav-button" href="#">1. Greetin</a>
-                <a class="nav-button" href="#">2. Porapipat</a>
-                <a class="nav-button" href="#">3. Sornpat</a>
-                <a class="nav-button" href="#">4. Contacts</a>
-            </div>
-        </nav>
-        
-        <!-- script -->
-        <script src="./js/script.js"></script>
-    </body>
+    <body class="port-body">
+        <div class="position-fixed h-100" style="width: 35%">
+            <div
+                class="mt-5 mb-3"
+                style="
+          display: flex;
+          border: none;
+          align-items: center;
+          background-color: white;
+          flex-direction: column;
+        ">
+                <div class="card text-center" style="border: none">
+                    <img
+                        style="width: 500px"
+                        src="https://cdn.discordapp.com/attachments/886190966514520105/1202859173394513950/Profile.png?ex=65cefce6&is=65bc87e6&hm=d32343b92293b4c7afa6fe6dc500175a04223c5188f197a7afd8f8b2591698ac&"
+                        alt="tersornpat" />
+                </div>
 
-</html>
+                <div style="width: 60%; text-align: left; margin-top: 30px">
+                    <p
+                        style="font-size: 30px; letter-spacing: -1px; font-weight: 500;">
+                        PORAPIPAT KAENPUT
+                    </p>
+                    <p
+                        style="font-size: 20px; letter-spacing: -1px; margin-top: -15px; font-weight: 500;">
+                        Studying Major of Computer Science, KMITL
+                    </p>
+                    <p
+                        style="
+              font-size: 15px;
+              letter-spacing: -1px;
+              margin-top: 10px;
+              color: grey;
+              font-weight: 300;
+            ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Reprehenderit repudiandae consectetur
+                    </p>
+                </div>
+                <div style="display: flex; flex-direction: column; width: 60%"
+                    class="mt-10">
+                    <a class="nav-button text-left m-0 port-left"
+                        href="#aboutme">- About</a>
+                    <a class="nav-button text-left m-0 port-left"
+                        href="#myskill">- Skills</a>
+                    <a class="nav-button text-left m-0 port-left"
+                        href="#myexperience">- Experience</a>
+                    <a class="nav-button text-left m-0 port-left"
+                        href="#contact-info">- Contacts</a>
+                </div>
+            </div>
+            <div class="contacts-left">
+                <a href="https://www.instragram.com"><img
+                        src="https://freelogopng.com/images/all_img/1683191308instagram-logo-black-and-white.png"
+                        alt="Instagram"></a>
+                <a href="https://www.facebook.com"><img
+                        src="https://i.pinimg.com/564x/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.jpg"
+                        alt="Facebook"></a>
+                <a href="https://www.github.com"><img
+                        src="data:image/png;base64,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"
+                        alt="LinkedIn"></a>
+                <a href="https://th.linkedin.com"><img
+                        src="https://cdn-icons-png.flaticon.com/512/61/61109.png"
+                        alt="Email"></a>
+            </div>
+            <div
+                class="mt-10"
+                style="
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          font-size: 30px;
+          margin-left: 50px;
+        "></div>
+        </div>
+        <div class="w-100 d-flex" style="width: 100%; display: flex">
+            <div style="width: 35%"></div>
+            <div style="width: 65%; height: auto" id="aboutme">
+                <div class="mt-5 d-flex flex-column">
+                    <div class="topic text-center"
+                        style="font-size: 2em; height: auto">
+                        About
+                    </div>
+                    <div class="mt-2 detail"
+                        style="font-size: 1.2em; height: auto">
+                        <p
+                            class="detail"
+                            style="margin: 20px 70px 0 70px; text-indent: 70px">
+                            <b>Hello.</b> My name is Porapipat Kaenput. I am
+                            taking a 9-credit
+                            module course for Full-Stack Web Development because
+                            I am
+                            deeply interested in this field and eager to expand
+                            my knowledge
+                            and skills. Throughout the course, I am acquiring
+                            proficiency in
+                            various programming languages, including HTML, CSS,
+                            PHP,
+                            Others, as well as Web Architecture and Security
+                            concepts.
+                            I am also working on a website project to strengthen
+                            my practical
+                            abilities further. My ultimate goal is to pursue a
+                            career in web
+                            development.
+                        </p>
+                    </div>
+                </div>
+                <hr id="myskill" />
+                <div class="mt-5 d-flex flex-column">
+                    <div class="topic text-center"
+                        style="font-size: 2em; height: auto">
+                        Skills
+                    </div>
+                    <div style="margin: 20px 70px 20px 70px">
+                        <div class="container mt-4 text-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div
+                                        class="mb-3"
+                                        style="text-align: left; margin-left: 20%; font-weight: 600">
+                                        Programming Languages
+                                    </div>
+                                    <div
+                                        class="custom-flex"
+                                        style="text-align: left; margin-left: 20%">
+                                        <ul class="mb-2">
+                                            Python
+                                        </ul>
+                                        <ul class="mb-2">
+                                            Java
+                                        </ul>
+                                        <ul class="mb-2">
+                                            PHP
+                                        </ul>
+                                        <ul class="mb-2">
+                                            JavaScript
+                                        </ul>
+                                        <ul class="mb-2">
+                                            C
+                                        </ul>
+                                        <ul class="mb-2">
+                                            SQL
+                                        </ul>
+                                        <ul class="mb-2">
+                                            HTML
+                                        </ul>
+                                        <ul class="mb-2">
+                                            CSS
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div
+                                        class="mb-3"
+                                        style="text-align: left; margin-left: 20%; font-weight: 600">
+                                        Frameworks & Libraries
+                                    </div>
+                                    <div
+                                        class="custom-flex"
+                                        style="text-align: left; margin-left: 20%">
+                                        <ul class="mb-2">
+                                            Tailwind
+                                        </ul>
+                                        <ul class="mb-2">
+                                            Bootstrap
+                                        </ul>
+                                        <ul class="mb-2">
+                                            Python Fast API & Flask
+                                        </ul>
+                                        <ul class="mb-2">
+                                            React-JS (Basic)
+                                        </ul>
+                                        <ul class="mb-2">
+                                            SpringBoot-Java
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div
+                                        class="mb-3"
+                                        style="text-align: left; margin-left: 20%; font-weight: 600">
+                                        Soft Skills
+                                    </div>
+                                    <div
+                                        class="custom-flex"
+                                        style="text-align: left; margin-left: 20%">
+                                        <ul class="mb-2">
+                                            Problem Solving
+                                        </ul>
+                                        <ul class="mb-2">
+                                            Critcal Thinking
+                                        </ul>
+                                        <ul class="mb-2">
+                                            Responsibility
+                                        </ul>
+                                        <ul class="mb-2">
+                                            Emotional Intelligence
+                                        </ul>
+                                        <ul class="mb-2">
+                                            Organization
+                                        </ul>
+                                        <ul class="mb-2">
+                                            Communication
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr id="myexperience" />
+                <div class="mt-5 d-flex flex-column">
+                    <div class="topic text-center"
+                        style="font-size: 2em; height: auto">
+                        Experiences
+                    </div>
+                    
+                    <div class="mt-5 exp-box">
+                        <div class="card">
+                            <img
+                                src="https://res.cloudinary.com/certifier/image/upload/v1693757637/large_51_participation_formal_darkviolet_landscape_ff5e55e81a.png"
+                                class="card-img-top"
+                                style="border-radius: 10%"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Certificate of Cooking</h5>
+                                <p class="card-text">
+                                    This is a longer card with supporting text
+                                    below as a natural
+                                    lead-in to additional content. This content
+                                    is a little bit
+                                    longer.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="https://d2vyhi5ouo1we3.cloudfront.net/force_jpg/aHR0cHM6Ly9pbWFnZXMuYmFubmVyYmVhci5jb20vcmVxdWVzdHMvaW1hZ2VzLzAwOC85MjQvNTc5L29yaWdpbmFsL2VhYzQyY2FiZjM5YzIxY2Y4NThlNWY4NDRlZmM0YTA1MjJmOGUxNzkucG5nPzE2MzI4MDgzMDI=/image.jpg"
+                                class="card-img-top"
+                                style="border-radius: 10%"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Cooking of Playing</h5>
+                                <p class="card-text">
+                                    This is a longer card with supporting text
+                                    below as a natural
+                                    lead-in to additional content. This content
+                                    is a little bit
+                                    longer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-5 exp-box">
+                        <div class="card">
+                            <img
+                                src="https://piktochart.com/wp-content/uploads/2022/11/large-158.jpg"
+                                class="card-img-top"
+                                style="border-radius: 10%"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Certificate of Running</h5>
+                                <p class="card-text">
+                                    This is a longer card with supporting text
+                                    below as a natural
+                                    lead-in to additional content. This content
+                                    is a little bit
+                                    longer.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img
+                                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/certificate-of-appreciation-design-template-c46b6dc447f94b068a04728bd695cc4c_screen.jpg?ts=1608659484"
+                                class="card-img-top"
+                                style="border-radius: 10%"
+                                alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title">Certificate of Shooting</h5>
+                                <p class="card-text">
+                                    This is a longer card with supporting text
+                                    below as a natural
+                                    lead-in to additional content. This content
+                                    is a little bit
+                                    longer.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr id="contact-info" />
+                    <div class="mt-5 d-flex flex-column">
+                        <div id="contacts">
+                            <div class="contact">
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6 text-center">
+                                            <h5 class="card-title">Porapipat
+                                                Kaenput</h5>
+                                            <p class="card-text">
+                                                <strong>Email:</strong>
+                                                63050156@kmitl.ac.th<br />
+                                                <strong>Phone:</strong>
+                                                0962830081<br />
+                                                <strong>Instagram:</strong>
+                                                @wdelol<br />
+                                                <strong>LinkedIn:</strong>
+                                                linkedin.com/in/porapipat-kaenput-315680166
+                                            </p>
+                                        </div>
+                                        <div
+                                            class="row justify-content-center"
+                                            style="padding-top: 50px">
+                                            <div class="col-12 text-center">
+                                                <p>&copy; 2024
+                                                    Porapipat&Sornpat.
+                                                    All
+                                                    rights reserved.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- script -->
+                <script src="./js/script.js"></script>
+            </body>
+        </html>

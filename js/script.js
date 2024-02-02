@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //typing text session
   var typingWords = ["Pkaenput.", "Samthian.", "Developer!"];
   var typingIndex = 0;
   var charIndex = 0;
@@ -32,6 +33,7 @@ $(document).ready(function () {
   }
   typeWriter();
 
+  //nav Hamburger Session
   $(".hamburger-menu").click(function () {
     $(".nav-menu").toggle();
   });
