@@ -12,8 +12,6 @@ body {
 
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 90px;
   z-index: 1000;
@@ -34,7 +32,7 @@ body {
 }
 
 #content-under-type {
-  width: 900px;
+  max-width: 900px;
 }
 
 .logo {
@@ -119,7 +117,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  /*กำหนดให้รูปภาพแสดงผลเต็มพื้นที่การแสดงผล */
   background-size: cover;
 }
 
@@ -157,11 +154,20 @@ body {
 .section-two{
   background-color: rgb(255, 255, 255);
   height: 100vh;
+  background-image: url('https://cdn.discordapp.com/attachments/886190966514520105/1202854163055120434/Untitled-2.png?ex=65cef83c&is=65bc833c&hm=8c60cf58d08bda8b1f7ad1451c70b4ad450f6f52f08216ac87d1b123304e332c&');
+
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /*กำหนดให้รูปภาพแสดงผลเต็มพื้นที่การแสดงผล */
+  background-size: cover;
 }
 
 .contact {
-  background-color: #241d1d;
-  height: 100px;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  /* height: 300px; */
 }
 
 .content {
@@ -184,4 +190,46 @@ body {
 .custom-flex {
   display: flex;
   flex-direction: column;
+}
+
+
+/* card */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; 
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.card a:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
 }

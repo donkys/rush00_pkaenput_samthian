@@ -30,6 +30,7 @@ $(document).ready(function () {
       setTimeout(typeWriter, typingSpeed);
     }
   }
+  typeWriter();
 
   $(".hamburger-menu").click(function () {
     $(".nav-menu").toggle();
@@ -41,5 +42,15 @@ $(document).ready(function () {
     }
   });
 
-  typeWriter();
+  $("a.nav-button").on("click", function (event) {
+    if (this.hash !== "") {
+      var hash = this.hash;
+      $("html, body").animate(
+        {scrollTop: $(hash).offset().top,}, 800,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
 });
